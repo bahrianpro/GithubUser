@@ -24,10 +24,10 @@ class UserListAdapter (private val userList:ArrayList<UserList>) :
     }
 
     override fun onBindViewHolder(holder: ListUserViewHolder, position: Int) {
-        val (username, company, avatares) = userList[position]
-        holder.imgAvatar.setImageResource(avatares.toInt())
-        holder.txtUsername.text = username
-        holder.txtPerusahaan.text = company
+        val data = userList[position]
+        holder.imgAvatar.setImageResource(data.avatares)
+        holder.txtUsername.text = data.username
+        holder.txtPerusahaan.text = data.company
     }
 
     override fun getItemCount(): Int {
