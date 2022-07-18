@@ -31,18 +31,19 @@ class MainActivity : AppCompatActivity() {
         val dtCompany = resources.getStringArray(R.array.dt_company)
         val dtFollowers = resources.getStringArray(R.array.dt_followers)
         val dtFollowing = resources.getStringArray(R.array.dt_following)
-        val dtAvatares = resources.getStringArray(R.array.dt_avatares)
+        val dtAvatares = resources.obtainTypedArray(R.array.dt_avatares)
 
         val listUser = ArrayList<UserList>()
         for (i in dtUsername.indices){
             val userL = UserList(
+                            dtUsername[i],
                             dtName[i],
                             dtLocation[i],
                             dtRepository[i],
                             dtCompany[i],
                             dtFollowers[i],
                             dtFollowing[i],
-                            dtAvatares[i]
+                            dtAvatares.getResourceId(i, -1)
             )
             listUser.add(userL)
         }

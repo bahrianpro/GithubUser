@@ -12,5 +12,5 @@ data class UserList(
     var company: String,
     var followers: String,
     var following: String,
-    var avatares: String
+    var avatares: Int
 ) : Parcelable

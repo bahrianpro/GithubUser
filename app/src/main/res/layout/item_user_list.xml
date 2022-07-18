@@ -41,7 +41,7 @@
             android:textColor="@color/black"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:text="@string/username"
+            android:text="@string/username"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toEndOf="@+id/img_avatar"
             card_view:layout_constraintTop_toTopOf="parent" />
@@ -53,12 +53,13 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:layout_toEndOf="@id/txt_username"
+            android:text="@string/company"
             android:textColor="@color/gray_dark"
             android:textSize="12sp"
-            tools:text="@string/company"
-            tools:layout_editor_absoluteY="40dp"
+            card_view:layout_constraintBottom_toTopOf="@+id/btn_detail"
             card_view:layout_constraintEnd_toEndOf="parent"
-            card_view:layout_constraintStart_toEndOf="@+id/img_avatar" />
+            card_view:layout_constraintStart_toEndOf="@+id/img_avatar"
+            card_view:layout_constraintTop_toBottomOf="@+id/txt_username" />
 
         <Button
             android:id="@+id/btn_detail"
@@ -67,9 +68,9 @@
             android:layout_marginStart="8dp"
             android:layout_marginEnd="8dp"
             android:layout_toEndOf="@id/txt_perusahaan"
+            android:text="@string/detail"
             android:textSize="12sp"
-            tools:text="@string/detail"
-            tools:layout_editor_absoluteY="65dp"
+            card_view:layout_constraintBottom_toBottomOf="parent"
             card_view:layout_constraintEnd_toEndOf="parent"
             card_view:layout_constraintStart_toEndOf="@+id/img_avatar" />
 

@@ -25,7 +25,7 @@ class UserListAdapter (private val userList:ArrayList<UserList>) :
 
     override fun onBindViewHolder(holder: ListUserViewHolder, position: Int) {
         val (username, company, avatares) = userList[position]
-        holder.imgAvatar.setImageResource(avatares)
+        holder.imgAvatar.setImageResource(avatares.toInt())
         holder.txtUsername.text = username
         holder.txtPerusahaan.text = company
     }
