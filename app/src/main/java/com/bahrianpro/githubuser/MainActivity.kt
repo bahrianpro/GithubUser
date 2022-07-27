@@ -1,24 +1,31 @@
 package com.bahrianpro.githubuser
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.widget.SearchView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.bahrianpro.githubuser.adapter.UserListAdapter
 import com.bahrianpro.githubuser.model.UserList
 
 class MainActivity : AppCompatActivity() {
-    private lateinit var rvUsers: RecyclerView
-    private val list = ArrayList<UserList>()
+    private lateinit var recyclerUsers: RecyclerView
+    private val userlist = ArrayList<UserList>()
+//    private lateinit var searchUsers: SearchView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        rvUsers = findViewById(R.id.rvUsers)
-        rvUsers.setHasFixedSize(true)
+//        searchUsers = findViewById(R.id.searchUsers)
+//        searchUsers.clearFocus()
+//        searchUsers.setOnQueryTextListener(object)
 
-        list.addAll(listUsers)
+        recyclerUsers = findViewById(R.id.recyclerUsers)
+        recyclerUsers.setHasFixedSize(true)
+
+        userlist.addAll(listUsers)
         showRecyclerList()
     }
 
@@ -51,9 +58,14 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showRecyclerList(){
-        rvUsers.layoutManager = LinearLayoutManager(this)
-        val userListAdapter = UserListAdapter(list)
-        rvUsers.adapter = userListAdapter
+        recyclerUsers.layoutManager = LinearLayoutManager(this)
+        val userListAdapter = UserListAdapter(userlist)
+        recyclerUsers.adapter = userListAdapter
+
+        userListAdapter.onItemClick = {
+            val intent = Intent(this, DetailActivity::class.java)
+            intent.putExtra("dataUser", it)
+        }
     }
 
 }
