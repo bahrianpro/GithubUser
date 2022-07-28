@@ -65,6 +65,7 @@ class MainActivity : AppCompatActivity() {
         userListAdapter.onItemClick = {
             val intent = Intent(this, DetailActivity::class.java)
             intent.putExtra("dataUser", it)
+            startActivity(intent)
         }
     }
 
