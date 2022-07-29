@@ -11,7 +11,7 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="300dp"
-        android:layout_height="300dp"
+        android:layout_height="320dp"
         android:background="@drawable/boxline"
         card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
@@ -48,10 +48,10 @@
         card_view:layout_constraintVertical_bias="0.015" />
 
     <TextView
-        android:id="@+id/txt_location"
+        android:id="@+id/txt_company"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/location"
+        android:text="@string/company"
         android:textColor="@color/black"
         android:textSize="12sp"
         card_view:layout_constraintBottom_toBottomOf="parent"
@@ -61,11 +61,22 @@
         card_view:layout_constraintVertical_bias="0.0" />
 
     <TextView
+        android:id="@+id/txt_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/location"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/txt_company" />
+
+    <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="156dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="44dp"
         android:text="@string/txtrepository"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -74,23 +85,11 @@
         card_view:layout_constraintTop_toBottomOf="@+id/txt_name" />
 
     <TextView
-        android:id="@+id/txt_repository"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="56dp"
-        android:text="@string/repository"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        card_view:layout_constraintStart_toEndOf="@+id/textView1"
-        card_view:layout_constraintTop_toTopOf="@+id/txt_name" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="108dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
         android:text="@string/txtfollowing"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -103,7 +102,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
         android:text="@string/following"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -111,11 +110,24 @@
         card_view:layout_constraintTop_toBottomOf="@+id/txt_name" />
 
     <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="64dp"
+        android:text="@string/txtfollowers"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        card_view:layout_constraintStart_toEndOf="@+id/txt_following"
+        card_view:layout_constraintTop_toBottomOf="@+id/txt_name" />
+
+    <TextView
         android:id="@+id/txt_followers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="48dp"
+        android:layout_marginTop="64dp"
         android:text="@string/followers"
         android:textColor="@color/black"
         android:textSize="12sp"
@@ -123,16 +135,15 @@
         card_view:layout_constraintTop_toBottomOf="@+id/txt_name" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txt_repository"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="48dp"
-        android:text="@string/txtfollowers"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="72dp"
+        android:text="@string/repository"
         android:textColor="@color/black"
         android:textSize="12sp"
-        android:textStyle="bold"
-        card_view:layout_constraintStart_toEndOf="@+id/txt_following"
-        card_view:layout_constraintTop_toBottomOf="@+id/txt_name" />
+        card_view:layout_constraintStart_toEndOf="@+id/textView1"
+        card_view:layout_constraintTop_toTopOf="@+id/txt_name" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

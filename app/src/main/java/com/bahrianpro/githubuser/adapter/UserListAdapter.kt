@@ -18,7 +18,7 @@ class UserListAdapter (private val userList:ArrayList<UserList>) :
     class ListUserViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val imgAvatar : ImageView = itemView.findViewById(R.id.img_avatar)
         val txtUsername : TextView = itemView.findViewById(R.id.txt_username)
-        val txtPerusahaan : TextView = itemView.findViewById(R.id.txt_perusahaan)
+        val txtName : TextView = itemView.findViewById(R.id.txt_name)
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ListUserViewHolder {
@@ -30,7 +30,7 @@ class UserListAdapter (private val userList:ArrayList<UserList>) :
         val dataUser = userList[position]
         holder.imgAvatar.setImageResource(dataUser.avatares)
         holder.txtUsername.text = dataUser.username
-        holder.txtPerusahaan.text = dataUser.company
+        holder.txtName.text = dataUser.name
 
         holder.itemView.setOnClickListener() {
             onItemClick?.invoke(dataUser)

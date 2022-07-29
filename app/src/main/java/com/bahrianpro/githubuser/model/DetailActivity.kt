@@ -16,6 +16,7 @@ class DetailActivity : AppCompatActivity() {
         if (dtUser != null){
             val imgAvatar : ImageView = findViewById(R.id.img_avatar)
             val txtName : TextView = findViewById(R.id.txt_name)
+            val txtCompany : TextView = findViewById(R.id.txt_company)
             val txtLocation : TextView = findViewById(R.id.txt_location)
             val txtRepository : TextView = findViewById(R.id.txt_repository)
             val txtFollowers : TextView = findViewById(R.id.txt_followers)
@@ -23,6 +24,7 @@ class DetailActivity : AppCompatActivity() {
 
             imgAvatar.setImageResource(dtUser.avatares)
             txtName.text = dtUser.name
+            txtCompany.text = dtUser.company
             txtLocation.text = dtUser.location
             txtRepository.text = dtUser.repository
             txtFollowers.text = dtUser.followers
