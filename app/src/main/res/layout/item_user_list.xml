@@ -14,15 +14,15 @@
         android:layout_marginTop="4dp"
         android:layout_marginRight="8dp"
         android:layout_marginBottom="4dp"
-        card_view:cardBackgroundColor="@color/colorSubtitle"
+        card_view:cardBackgroundColor="@color/black"
         card_view:cardCornerRadius="10dp">
 
         <de.hdodenhof.circleimageview.CircleImageView
             android:id="@+id/img_avatar"
             android:layout_width="100dp"
             android:layout_height="95dp"
-            android:layout_marginTop="8dp"
             android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
             android:layout_marginBottom="8dp"
             tools:ignore="ImageContrastCheck"
             tools:src="@tools:sample/avatars" />
@@ -31,8 +31,8 @@
             android:id="@+id/txt_username"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="9dp"
             android:layout_marginStart="115dp"
+            android:layout_marginTop="9dp"
             android:layout_marginEnd="15dp"
             android:text="@string/username"
             android:textColor="@color/white"
@@ -43,8 +43,8 @@
             android:id="@+id/txt_perusahaan"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="40dp"
             android:layout_marginStart="115dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="15dp"
             android:text="@string/company"
             android:textColor="@color/white"
@@ -53,8 +53,8 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="40dp"
             android:layout_marginStart="115dp"
+            android:layout_marginTop="40dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="9dp"
             android:text=">"

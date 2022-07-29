@@ -3,9 +3,12 @@
     <string name="username">Username</string>
     <string name="name">Nama Lengkap</string>
     <string name="location">Lokasi</string>
+    <string name="txtrepository">Repositori:</string>
     <string name="repository">Repositori</string>
     <string name="company">Perusahaan</string>
+    <string name="txtfollowers">Follower:</string>
     <string name="followers">Follower</string>
+    <string name="txtfollowing">Following:</string>
     <string name="following">Following</string>
     <string name="avatares">Avatar</string>
     <string name="detail">Detail</string>

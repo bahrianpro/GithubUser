@@ -1,10 +1,10 @@
-package com.bahrianpro.githubuser
+package com.bahrianpro.githubuser.model
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
-import com.bahrianpro.githubuser.model.UserList
+import com.bahrianpro.githubuser.R
 
 class DetailActivity : AppCompatActivity() {
 
