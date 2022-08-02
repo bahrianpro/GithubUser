@@ -15,6 +15,7 @@ class DetailActivity : AppCompatActivity() {
         val dtUser = intent.getParcelableExtra<UserList>("dataUser")
         if (dtUser != null){
             val imgAvatar : ImageView = findViewById(R.id.img_avatar)
+            val txtUsername : TextView = findViewById(R.id.txt_username)
             val txtName : TextView = findViewById(R.id.txt_name)
             val txtCompany : TextView = findViewById(R.id.txt_company)
             val txtLocation : TextView = findViewById(R.id.txt_location)
@@ -23,6 +24,7 @@ class DetailActivity : AppCompatActivity() {
             val txtFollowing : TextView = findViewById(R.id.txt_following)
 
             imgAvatar.setImageResource(dtUser.avatares)
+            txtUsername.text = "( " + dtUser.username +" )"
             txtName.text = dtUser.name
             txtCompany.text = dtUser.company
             txtLocation.text = dtUser.location

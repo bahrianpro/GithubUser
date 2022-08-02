@@ -11,14 +11,14 @@
     <TextView
         android:id="@+id/textView4"
         android:layout_width="300dp"
-        android:layout_height="320dp"
+        android:layout_height="350dp"
         android:background="@drawable/boxline"
         card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
         card_view:layout_constraintHorizontal_bias="0.495"
         card_view:layout_constraintStart_toStartOf="parent"
         card_view:layout_constraintTop_toTopOf="parent"
-        card_view:layout_constraintVertical_bias="0.141" />
+        card_view:layout_constraintVertical_bias="0.102" />
 
     <de.hdodenhof.circleimageview.CircleImageView
         android:id="@+id/img_avatar"
@@ -33,25 +33,38 @@
         tools:src="@tools:sample/avatars" />
 
     <TextView
+        android:id="@+id/txt_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/username"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        card_view:layout_constraintEnd_toEndOf="parent"
+        card_view:layout_constraintHorizontal_bias="0.498"
+        card_view:layout_constraintStart_toStartOf="parent"
+        card_view:layout_constraintTop_toBottomOf="@+id/img_avatar" />
+
+    <TextView
         android:id="@+id/txt_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/name"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="20sp"
         android:textStyle="bold"
-        card_view:layout_constraintBottom_toBottomOf="parent"
         card_view:layout_constraintEnd_toEndOf="parent"
-        card_view:layout_constraintHorizontal_bias="0.498"
         card_view:layout_constraintStart_toStartOf="parent"
-        card_view:layout_constraintTop_toBottomOf="@+id/img_avatar"
-        card_view:layout_constraintVertical_bias="0.015" />
+        card_view:layout_constraintTop_toBottomOf="@+id/txt_username" />
 
     <TextView
         android:id="@+id/txt_company"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/company"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="12sp"
         card_view:layout_constraintBottom_toBottomOf="parent"
@@ -65,6 +78,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/location"
+        android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="12sp"
         card_view:layout_constraintEnd_toEndOf="parent"
